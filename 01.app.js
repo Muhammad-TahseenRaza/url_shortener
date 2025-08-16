@@ -56,7 +56,7 @@ let server = createServer(async (req, res) => {
 
     if (req.method === 'GET') {
         if (req.url === '/') {
-            return serveFile(res, path.join('public', 'index.html'), 'text/html');
+            return serveFile(res, path.join('public', '01.url-shortener.html'), 'text/html');
 
         } else if (req.url === '/01.style.css') {
             return serveFile(res, path.join('public', '01.style.css'), 'text/css');
